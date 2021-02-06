@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1406517E2275D893007F304C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1406517D2275D893007F304C /* Configuration.swift */; };
+		140651802275D8CE007F304C /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1406517F2275D8CE007F304C /* KeychainWrapper.swift */; };
+		14DBEFB121FB8DCE00100FFE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DBEFB021FB8DCE00100FFE /* App.swift */; };
+		14DBEFB821FB8DDA00100FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DBEFB721FB8DDA00100FFE /* Assets.xcassets */; };
+		14DBEFBB21FB8DDA00100FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DBEFB921FB8DDA00100FFE /* LaunchScreen.storyboard */; };
+		60C78FC72356140F006D8874 /* SentinelAPI.Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C78FC62356140F006D8874 /* SentinelAPI.Models.swift */; };
+		D40D43B725BF3B55009FCED2 /* DisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40D43B625BF3B55009FCED2 /* DisclaimerView.swift */; };
+		D438CF62259DE41F007CFD3C /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = D438CF61259DE41F007CFD3C /* SwiftUIX */; };
+		D43A960724C4EA5E005D2DC9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43A960624C4EA5E005D2DC9 /* OnboardingView.swift */; };
+		D43A960D24C4EB4B005D2DC9 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43A960C24C4EB4B005D2DC9 /* AppModel.swift */; };
+		D44F2ED424E040FA00032601 /* CountryMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F2ED324E040FA00032601 /* CountryMap.swift */; };
+		D44F2ED924E042E700032601 /* co.sentinel.sentinellite.regional.countries.json in Resources */ = {isa = PBXBuildFile; fileRef = D44F2ED624E042E700032601 /* co.sentinel.sentinellite.regional.countries.json */; };
+		D44F2EDB24E042E700032601 /* co.sentinel.sentinellite.regional.countries_extras.json in Resources */ = {isa = PBXBuildFile; fileRef = D44F2ED824E042E700032601 /* co.sentinel.sentinellite.regional.countries_extras.json */; };
+		D4608AB82575B7180055041D /* BuiltByDisclaimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4608AB72575B7180055041D /* BuiltByDisclaimer.swift */; };
+		D4608ABE2575BDFC0055041D /* FeedbackGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4608ABD2575BDFC0055041D /* FeedbackGenerator.swift */; };
+		D465B8EB24D86085007FD8A8 /* Color+Sentinel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D465B8EA24D86085007FD8A8 /* Color+Sentinel.swift */; };
+		D465B8ED24D88746007FD8A8 /* NodeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D465B8EC24D88746007FD8A8 /* NodeCellView.swift */; };
+		D4673BE924E30BEC00E476C4 /* BackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4673BE824E30BEC00E476C4 /* BackgroundGradient.swift */; };
+		D476108125110D4600B60511 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D476108025110D4600B60511 /* ContentView.swift */; };
+		D47610832511101F00B60511 /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47610822511101F00B60511 /* Diagnostics.swift */; };
+		D47610852511103500B60511 /* SupportMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47610842511103500B60511 /* SupportMail.swift */; };
+		D484494225146CD500D41C47 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = D484494125146CD500D41C47 /* SwiftUIX */; };
+		D484495825146D6900D41C47 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = D484495725146D6900D41C47 /* NetworkKit */; };
+		D49088AD24E4BF0300B0FF55 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49088AC24E4BF0300B0FF55 /* SettingsView.swift */; };
+		D4B9480C24E2C7A400EE6BF2 /* SentinelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B9480B24E2C7A400EE6BF2 /* SentinelAPI.swift */; };
+		D4BB938124E455E7007BE6E1 /* ca.crt in Resources */ = {isa = PBXBuildFile; fileRef = D4BB938024E455C6007BE6E1 /* ca.crt */; };
+		D4BC211524DD82B200C03DB2 /* ContinentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BC211424DD82B200C03DB2 /* ContinentList.swift */; };
+		D4BC211724DD8CE300C03DB2 /* NodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BC211624DD8CE300C03DB2 /* NodeList.swift */; };
+		D4BC211924DD8D9C00C03DB2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BC211824DD8D9B00C03DB2 /* HeaderView.swift */; };
+		D4D16BDC24E6C6D5008303A8 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D16BDB24E6C6D5008303A8 /* ErrorManager.swift */; };
+		D4E80FFD25788A7D004DD94E /* Overpass-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FEC25788A7D004DD94E /* Overpass-ExtraLight.ttf */; };
+		D4E80FFE25788A7D004DD94E /* Overpass-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FED25788A7D004DD94E /* Overpass-ThinItalic.ttf */; };
+		D4E80FFF25788A7D004DD94E /* Overpass-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FEE25788A7D004DD94E /* Overpass-BoldItalic.ttf */; };
+		D4E8100025788A7D004DD94E /* Overpass-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FEF25788A7D004DD94E /* Overpass-LightItalic.ttf */; };
+		D4E8100125788A7D004DD94E /* Overpass-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FF025788A7D004DD94E /* Overpass-ExtraBoldItalic.ttf */; };
+		D4E8100225788A7D004DD94E /* Overpass-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FF125788A7D004DD94E /* Overpass-Light.ttf */; };
+		D4E8100325788A7D004DD94E /* Overpass-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FF225788A7D004DD94E /* Overpass-BlackItalic.ttf */; };
+		D4E8100425788A7D004DD94E /* Overpass-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FF325788A7D004DD94E /* Overpass-Regular.ttf */; };
+		D4E8100525788A7D004DD94E /* Overpass-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FF425788A7D004DD94E /* Overpass-SemiBoldItalic.ttf */; };
+		D4E8100625788A7D004DD94E /* Overpass-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FF525788A7D004DD94E /* Overpass-ExtraLightItalic.ttf */; };
+		D4E8100725788A7D004DD94E /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FF625788A7D004DD94E /* OFL.txt */; };
+		D4E8100825788A7D004DD94E /* Overpass-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FF725788A7D004DD94E /* Overpass-Black.ttf */; };
+		D4E8100925788A7D004DD94E /* Overpass-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FF825788A7D004DD94E /* Overpass-SemiBold.ttf */; };
+		D4E8100A25788A7D004DD94E /* Overpass-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FF925788A7D004DD94E /* Overpass-Bold.ttf */; };
+		D4E8100B25788A7D004DD94E /* Overpass-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FFA25788A7D004DD94E /* Overpass-Italic.ttf */; };
+		D4E8100C25788A7D004DD94E /* Overpass-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FFB25788A7D004DD94E /* Overpass-ExtraBold.ttf */; };
+		D4E8100D25788A7D004DD94E /* Overpass-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4E80FFC25788A7D004DD94E /* Overpass-Thin.ttf */; };
+		D4E8101025788C91004DD94E /* Font+Sentinel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E8100F25788C91004DD94E /* Font+Sentinel.swift */; };
+		D4F2F166256E288E00EEC33B /* ActiveNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2F165256E288E00EEC33B /* ActiveNodeView.swift */; };
+		D4F4FA362572E835006D9CF8 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F4FA352572E835006D9CF8 /* LaunchView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14CBCDFF22A98F8D00C2147D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1406517D2275D893007F304C /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		1406517F2275D8CE007F304C /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		14731A622233BC990051B565 /* Sentinel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sentinel.entitlements; sourceTree = "<group>"; };
+		14DBEFAD21FB8DCE00100FFE /* Sentinel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentinel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DBEFB021FB8DCE00100FFE /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		14DBEFB721FB8DDA00100FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14DBEFBA21FB8DDA00100FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14DBEFBC21FB8DDA00100FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60C78FC62356140F006D8874 /* SentinelAPI.Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentinelAPI.Models.swift; sourceTree = "<group>"; };
+		D40D43B625BF3B55009FCED2 /* DisclaimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerView.swift; sourceTree = "<group>"; };
+		D43A960624C4EA5E005D2DC9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		D43A960C24C4EB4B005D2DC9 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		D44F2ED324E040FA00032601 /* CountryMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryMap.swift; sourceTree = "<group>"; };
+		D44F2ED624E042E700032601 /* co.sentinel.sentinellite.regional.countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = co.sentinel.sentinellite.regional.countries.json; sourceTree = "<group>"; };
+		D44F2ED824E042E700032601 /* co.sentinel.sentinellite.regional.countries_extras.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = co.sentinel.sentinellite.regional.countries_extras.json; sourceTree = "<group>"; };
+		D4608AB72575B7180055041D /* BuiltByDisclaimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltByDisclaimer.swift; sourceTree = "<group>"; };
+		D4608ABD2575BDFC0055041D /* FeedbackGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackGenerator.swift; sourceTree = "<group>"; };
+		D465B8EA24D86085007FD8A8 /* Color+Sentinel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Sentinel.swift"; sourceTree = "<group>"; };
+		D465B8EC24D88746007FD8A8 /* NodeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeCellView.swift; sourceTree = "<group>"; };
+		D4673BE824E30BEC00E476C4 /* BackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGradient.swift; sourceTree = "<group>"; };
+		D476108025110D4600B60511 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D47610822511101F00B60511 /* Diagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnostics.swift; sourceTree = "<group>"; };
+		D47610842511103500B60511 /* SupportMail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportMail.swift; sourceTree = "<group>"; };
+		D49088AC24E4BF0300B0FF55 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D4B9480B24E2C7A400EE6BF2 /* SentinelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentinelAPI.swift; sourceTree = "<group>"; };
+		D4BB938024E455C6007BE6E1 /* ca.crt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ca.crt; sourceTree = "<group>"; };
+		D4BC211424DD82B200C03DB2 /* ContinentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentList.swift; sourceTree = "<group>"; };
+		D4BC211624DD8CE300C03DB2 /* NodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeList.swift; sourceTree = "<group>"; };
+		D4BC211824DD8D9B00C03DB2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D4D16BDB24E6C6D5008303A8 /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		D4E80FEC25788A7D004DD94E /* Overpass-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D4E80FED25788A7D004DD94E /* Overpass-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ThinItalic.ttf"; sourceTree = "<group>"; };
+		D4E80FEE25788A7D004DD94E /* Overpass-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D4E80FEF25788A7D004DD94E /* Overpass-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-LightItalic.ttf"; sourceTree = "<group>"; };
+		D4E80FF025788A7D004DD94E /* Overpass-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		D4E80FF125788A7D004DD94E /* Overpass-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Light.ttf"; sourceTree = "<group>"; };
+		D4E80FF225788A7D004DD94E /* Overpass-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-BlackItalic.ttf"; sourceTree = "<group>"; };
+		D4E80FF325788A7D004DD94E /* Overpass-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Regular.ttf"; sourceTree = "<group>"; };
+		D4E80FF425788A7D004DD94E /* Overpass-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D4E80FF525788A7D004DD94E /* Overpass-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		D4E80FF625788A7D004DD94E /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		D4E80FF725788A7D004DD94E /* Overpass-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Black.ttf"; sourceTree = "<group>"; };
+		D4E80FF825788A7D004DD94E /* Overpass-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-SemiBold.ttf"; sourceTree = "<group>"; };
+		D4E80FF925788A7D004DD94E /* Overpass-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Bold.ttf"; sourceTree = "<group>"; };
+		D4E80FFA25788A7D004DD94E /* Overpass-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Italic.ttf"; sourceTree = "<group>"; };
+		D4E80FFB25788A7D004DD94E /* Overpass-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D4E80FFC25788A7D004DD94E /* Overpass-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Thin.ttf"; sourceTree = "<group>"; };
+		D4E8100F25788C91004DD94E /* Font+Sentinel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Sentinel.swift"; sourceTree = "<group>"; };
+		D4F2F165256E288E00EEC33B /* ActiveNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNodeView.swift; sourceTree = "<group>"; };
+		D4F4FA352572E835006D9CF8 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14DBEFAA21FB8DCE00100FFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D438CF62259DE41F007CFD3C /* SwiftUIX in Frameworks */,
+				D484495825146D6900D41C47 /* NetworkKit in Frameworks */,
+				D484494225146CD500D41C47 /* SwiftUIX in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14BEFBDC21FDD5B7003A59F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D43A960C24C4EB4B005D2DC9 /* AppModel.swift */,
+				1406517D2275D893007F304C /* Configuration.swift */,
+				D44F2ED324E040FA00032601 /* CountryMap.swift */,
+				D47610822511101F00B60511 /* Diagnostics.swift */,
+				D4D16BDB24E6C6D5008303A8 /* ErrorManager.swift */,
+				1406517F2275D8CE007F304C /* KeychainWrapper.swift */,
+				60C78FC62356140F006D8874 /* SentinelAPI.Models.swift */,
+				D4B9480B24E2C7A400EE6BF2 /* SentinelAPI.swift */,
+				D47610842511103500B60511 /* SupportMail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14DBEFA421FB8DCE00100FFE = {
+			isa = PBXGroup;
+			children = (
+				14DBEFAE21FB8DCE00100FFE /* Products */,
+				14DBEFAF21FB8DCE00100FFE /* Targets */,
+			);
+			sourceTree = "<group>";
+		};
+		14DBEFAE21FB8DCE00100FFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14DBEFAD21FB8DCE00100FFE /* Sentinel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14DBEFAF21FB8DCE00100FFE /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				D484896A2572224F008AA4BB /* Sentinel */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		D43A960B24C4EB46005D2DC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4E8101225788C93004DD94E /* Theme */,
+				D4F2F165256E288E00EEC33B /* ActiveNodeView.swift */,
+				D4673BE824E30BEC00E476C4 /* BackgroundGradient.swift */,
+				D40D43B625BF3B55009FCED2 /* DisclaimerView.swift */,
+				D4608AB72575B7180055041D /* BuiltByDisclaimer.swift */,
+				D476108025110D4600B60511 /* ContentView.swift */,
+				D4BC211424DD82B200C03DB2 /* ContinentList.swift */,
+				D4608ABD2575BDFC0055041D /* FeedbackGenerator.swift */,
+				D4BC211824DD8D9B00C03DB2 /* HeaderView.swift */,
+				D4F4FA352572E835006D9CF8 /* LaunchView.swift */,
+				D465B8EC24D88746007FD8A8 /* NodeCellView.swift */,
+				D4BC211624DD8CE300C03DB2 /* NodeList.swift */,
+				D43A960624C4EA5E005D2DC9 /* OnboardingView.swift */,
+				D49088AC24E4BF0300B0FF55 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D484896525722222008AA4BB /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				14BEFBDC21FDD5B7003A59F2 /* Model */,
+				D43A960B24C4EB46005D2DC9 /* View */,
+				14DBEFB021FB8DCE00100FFE /* App.swift */,
+				14DBEFB921FB8DDA00100FFE /* LaunchScreen.storyboard */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		D484896625722226008AA4BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D484896D25722275008AA4BB /* Bundle Resources */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D484896A2572224F008AA4BB /* Sentinel */ = {
+			isa = PBXGroup;
+			children = (
+				D484896525722222008AA4BB /* Files */,
+				D484896625722226008AA4BB /* Supporting Files */,
+			);
+			path = Sentinel;
+			sourceTree = "<group>";
+		};
+		D484896D25722275008AA4BB /* Bundle Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4B7F00724C4EF4700EDEE82 /* Fonts */,
+				14DBEFB721FB8DDA00100FFE /* Assets.xcassets */,
+				14DBEFBC21FB8DDA00100FFE /* Info.plist */,
+				14731A622233BC990051B565 /* Sentinel.entitlements */,
+				D4BB938024E455C6007BE6E1 /* ca.crt */,
+				D44F2ED624E042E700032601 /* co.sentinel.sentinellite.regional.countries.json */,
+				D44F2ED824E042E700032601 /* co.sentinel.sentinellite.regional.countries_extras.json */,
+			);
+			path = "Bundle Resources";
+			sourceTree = "<group>";
+		};
+		D4B7F00724C4EF4700EDEE82 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D4E80FEB25788A7D004DD94E /* Overpass */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D4E80FEB25788A7D004DD94E /* Overpass */ = {
+			isa = PBXGroup;
+			children = (
+				D4E80FEC25788A7D004DD94E /* Overpass-ExtraLight.ttf */,
+				D4E80FED25788A7D004DD94E /* Overpass-ThinItalic.ttf */,
+				D4E80FEE25788A7D004DD94E /* Overpass-BoldItalic.ttf */,
+				D4E80FEF25788A7D004DD94E /* Overpass-LightItalic.ttf */,
+				D4E80FF025788A7D004DD94E /* Overpass-ExtraBoldItalic.ttf */,
+				D4E80FF125788A7D004DD94E /* Overpass-Light.ttf */,
+				D4E80FF225788A7D004DD94E /* Overpass-BlackItalic.ttf */,
+				D4E80FF325788A7D004DD94E /* Overpass-Regular.ttf */,
+				D4E80FF425788A7D004DD94E /* Overpass-SemiBoldItalic.ttf */,
+				D4E80FF525788A7D004DD94E /* Overpass-ExtraLightItalic.ttf */,
+				D4E80FF625788A7D004DD94E /* OFL.txt */,
+				D4E80FF725788A7D004DD94E /* Overpass-Black.ttf */,
+				D4E80FF825788A7D004DD94E /* Overpass-SemiBold.ttf */,
+				D4E80FF925788A7D004DD94E /* Overpass-Bold.ttf */,
+				D4E80FFA25788A7D004DD94E /* Overpass-Italic.ttf */,
+				D4E80FFB25788A7D004DD94E /* Overpass-ExtraBold.ttf */,
+				D4E80FFC25788A7D004DD94E /* Overpass-Thin.ttf */,
+			);
+			path = Overpass;
+			sourceTree = "<group>";
+		};
+		D4E8101225788C93004DD94E /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				D465B8EA24D86085007FD8A8 /* Color+Sentinel.swift */,
+				D4E8100F25788C91004DD94E /* Font+Sentinel.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14DBEFAC21FB8DCE00100FFE /* Sentinel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DBEFBF21FB8DDA00100FFE /* Build configuration list for PBXNativeTarget "Sentinel" */;
+			buildPhases = (
+				14DBEFA921FB8DCE00100FFE /* Sources */,
+				14DBEFAA21FB8DCE00100FFE /* Frameworks */,
+				14DBEFAB21FB8DCE00100FFE /* Resources */,
+				14CBCDFF22A98F8D00C2147D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sentinel;
+			packageProductDependencies = (
+				D484494125146CD500D41C47 /* SwiftUIX */,
+				D484495725146D6900D41C47 /* NetworkKit */,
+				D438CF61259DE41F007CFD3C /* SwiftUIX */,
+			);
+			productName = Sentinel;
+			productReference = 14DBEFAD21FB8DCE00100FFE /* Sentinel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14DBEFA521FB8DCE00100FFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Test;
+				TargetAttributes = {
+					14DBEFAC21FB8DCE00100FFE = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1200;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 0;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 14DBEFA821FB8DCE00100FFE /* Build configuration list for PBXProject "Sentinel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14DBEFA421FB8DCE00100FFE;
+			packageReferences = (
+				D484495625146D6900D41C47 /* XCRemoteSwiftPackageReference "NetworkKit" */,
+				D438CF60259DE41F007CFD3C /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
+			productRefGroup = 14DBEFAE21FB8DCE00100FFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14DBEFAC21FB8DCE00100FFE /* Sentinel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14DBEFAB21FB8DCE00100FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44F2ED924E042E700032601 /* co.sentinel.sentinellite.regional.countries.json in Resources */,
+				D4E80FFE25788A7D004DD94E /* Overpass-ThinItalic.ttf in Resources */,
+				D4E8100525788A7D004DD94E /* Overpass-SemiBoldItalic.ttf in Resources */,
+				D4E8100025788A7D004DD94E /* Overpass-LightItalic.ttf in Resources */,
+				D4E8100825788A7D004DD94E /* Overpass-Black.ttf in Resources */,
+				D4E8100B25788A7D004DD94E /* Overpass-Italic.ttf in Resources */,
+				D4E8100A25788A7D004DD94E /* Overpass-Bold.ttf in Resources */,
+				D4E8100125788A7D004DD94E /* Overpass-ExtraBoldItalic.ttf in Resources */,
+				D4E80FFF25788A7D004DD94E /* Overpass-BoldItalic.ttf in Resources */,
+				D4E8100725788A7D004DD94E /* OFL.txt in Resources */,
+				D4E80FFD25788A7D004DD94E /* Overpass-ExtraLight.ttf in Resources */,
+				D4BB938124E455E7007BE6E1 /* ca.crt in Resources */,
+				14DBEFBB21FB8DDA00100FFE /* LaunchScreen.storyboard in Resources */,
+				D4E8100225788A7D004DD94E /* Overpass-Light.ttf in Resources */,
+				D4E8100C25788A7D004DD94E /* Overpass-ExtraBold.ttf in Resources */,
+				14DBEFB821FB8DDA00100FFE /* Assets.xcassets in Resources */,
+				D44F2EDB24E042E700032601 /* co.sentinel.sentinellite.regional.countries_extras.json in Resources */,
+				D4E8100925788A7D004DD94E /* Overpass-SemiBold.ttf in Resources */,
+				D4E8100D25788A7D004DD94E /* Overpass-Thin.ttf in Resources */,
+				D4E8100325788A7D004DD94E /* Overpass-BlackItalic.ttf in Resources */,
+				D4E8100625788A7D004DD94E /* Overpass-ExtraLightItalic.ttf in Resources */,
+				D4E8100425788A7D004DD94E /* Overpass-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14DBEFA921FB8DCE00100FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D16BDC24E6C6D5008303A8 /* ErrorManager.swift in Sources */,
+				D465B8EB24D86085007FD8A8 /* Color+Sentinel.swift in Sources */,
+				14DBEFB121FB8DCE00100FFE /* App.swift in Sources */,
+				D49088AD24E4BF0300B0FF55 /* SettingsView.swift in Sources */,
+				D465B8ED24D88746007FD8A8 /* NodeCellView.swift in Sources */,
+				D4608ABE2575BDFC0055041D /* FeedbackGenerator.swift in Sources */,
+				D4608AB82575B7180055041D /* BuiltByDisclaimer.swift in Sources */,
+				D43A960D24C4EB4B005D2DC9 /* AppModel.swift in Sources */,
+				D47610852511103500B60511 /* SupportMail.swift in Sources */,
+				D4BC211924DD8D9C00C03DB2 /* HeaderView.swift in Sources */,
+				D43A960724C4EA5E005D2DC9 /* OnboardingView.swift in Sources */,
+				D4F2F166256E288E00EEC33B /* ActiveNodeView.swift in Sources */,
+				D4F4FA362572E835006D9CF8 /* LaunchView.swift in Sources */,
+				D4E8101025788C91004DD94E /* Font+Sentinel.swift in Sources */,
+				D47610832511101F00B60511 /* Diagnostics.swift in Sources */,
+				D476108125110D4600B60511 /* ContentView.swift in Sources */,
+				1406517E2275D893007F304C /* Configuration.swift in Sources */,
+				D4673BE924E30BEC00E476C4 /* BackgroundGradient.swift in Sources */,
+				140651802275D8CE007F304C /* KeychainWrapper.swift in Sources */,
+				D4BC211724DD8CE300C03DB2 /* NodeList.swift in Sources */,
+				D4B9480C24E2C7A400EE6BF2 /* SentinelAPI.swift in Sources */,
+				60C78FC72356140F006D8874 /* SentinelAPI.Models.swift in Sources */,
+				D40D43B725BF3B55009FCED2 /* DisclaimerView.swift in Sources */,
+				D44F2ED424E040FA00032601 /* CountryMap.swift in Sources */,
+				D4BC211524DD82B200C03DB2 /* ContinentList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14DBEFB921FB8DDA00100FFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14DBEFBA21FB8DDA00100FFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14DBEFBD21FB8DDA00100FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14DBEFBE21FB8DDA00100FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14DBEFC021FB8DDA00100FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Targets/Sentinel/Supporting Files/Bundle Resources/Sentinel.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G49975RHAR;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
+				INFOPLIST_FILE = "Targets/Sentinel/Supporting Files/Bundle Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.sentinel.dvpn.free;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14DBEFC121FB8DDA00100FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Targets/Sentinel/Supporting Files/Bundle Resources/Sentinel.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G49975RHAR;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
+				INFOPLIST_FILE = "Targets/Sentinel/Supporting Files/Bundle Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.sentinel.dvpn.free;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14DBEFA821FB8DCE00100FFE /* Build configuration list for PBXProject "Sentinel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DBEFBD21FB8DDA00100FFE /* Debug */,
+				14DBEFBE21FB8DDA00100FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14DBEFBF21FB8DDA00100FFE /* Build configuration list for PBXNativeTarget "Sentinel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DBEFC021FB8DDA00100FFE /* Debug */,
+				14DBEFC121FB8DDA00100FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D438CF60259DE41F007CFD3C /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D484495625146D6900D41C47 /* XCRemoteSwiftPackageReference "NetworkKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vmanot/NetworkKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D438CF61259DE41F007CFD3C /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D438CF60259DE41F007CFD3C /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+		D484494125146CD500D41C47 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIX;
+		};
+		D484495725146D6900D41C47 /* NetworkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D484495625146D6900D41C47 /* XCRemoteSwiftPackageReference "NetworkKit" */;
+			productName = NetworkKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 14DBEFA521FB8DCE00100FFE /* Project object */;
+}
